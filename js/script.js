@@ -1,6 +1,6 @@
 // toggle class active
 
-const navbarNav = document.querySelector('.navbar-nav');
+const navbarNav = document.querySelector('.navbar-navku');
 
 document.querySelector('#humberger-menu').onclick = () =>{
     navbarNav.classList.toggle('active');

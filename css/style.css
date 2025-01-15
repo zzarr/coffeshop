@@ -21,7 +21,7 @@ body {
 
 /*Navbar*/
 
-.navbar{
+.navbarku{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,30 +35,30 @@ body {
     z-index: 999999;
 }
 
-.navbar .navbar-logo{
+.navbarku .navbar-logo{
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
 
 }
 
-.navbar .navbar-logo span{
+.navbarku .navbar-logo span{
     color: var(--primary);
     font-style: italic;
 }
 
-.navbar .navbar-nav a{
+.navbarku .navbar-navku a{
     color: #fff;
     display: inline-block;
     font-size: 1.2rem;
     margin: 0 1rem;
 }
 
-.navbar .navbar-nav a:hover{
+.navbarku .navbar-navku a:hover{
     color: var(--primary);
 }
 
-.navbar .navbar-nav a::after{
+.navbarku .navbar-navku a::after{
     content: '';
     display: block;
     padding-bottom: 0.5rem;
@@ -67,17 +67,18 @@ body {
     transition: 0.2s linear;
 }
 
-.navbar .navbar-nav a:hover::after{
+.navbarku .navbar-navku a:hover::after{
     transform: scaleX(0.5);
 }
 
-.navbar .navbar-extra a{
+.navbarku .navbar-extraku a{
+    display: inline-block;
     color: #fff;
     margin: 0 0.5rem;
 
 }
 
-.navbar .navbar-extra a:hover{
+.navbarku .navbar-extraku a:hover{
     color: var(--primary);
 }
 
@@ -143,6 +144,58 @@ body {
     box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
  }
 
+ .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .marketing .col-lg-12 {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  .marketing .col-lg-12 span{
+    color: var(--primary);
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+  .marketing .col-lg-4 img{
+    height: 140px;
+    width: 140px;
+  }
+
+  /* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+  }
+
+  .marketing .about {
+    padding: 10rem 7% 1.4rem;
+  }
+
+  .marketing .about .featurette-heading span{
+    color: var(--primary);
+  }
+  
+  .marketing .menu {
+    padding: 10rem 7% 1.4rem;
+  }
+
+ .marketing .menu .row:last-child {
+    margin-top: 2rem; /* Atur jarak antara row atas dan row terakhir */
+  }
+  
+
 
 /*media querry*/
 /*laptop*/
@@ -159,7 +212,7 @@ body {
     #humberger-menu{
         display: inline-block;
     }
-    .navbar .navbar-nav{
+    .navbarku .navbar-navku{
         position: absolute;
         top: 100%;
         right: -100%;
@@ -168,12 +221,12 @@ body {
         height: 100vh;
     }
 
-    .navbar .navbar-nav.active{
+    .navbarku .navbar-navku.active{
         right: 0;
 
     }
 
-    .navbar .navbar-nav a{
+    .navbarku .navbar-navku a{
         color: var(--bg);
         display: block;
         margin: 1.5rem;
@@ -181,11 +234,11 @@ body {
         font-size: 2rem;
     }
 
-    .navbar .navbar-nav a::after{
+    .navbarku .navbar-navku a::after{
         transform-origin: 0 0;
     }
 
-    .navbar .navbar-nav a:hover:after{
+    .navbarku .navbar-navku a:hover:after{
         transform: scaleX(0.2rem);
     }
 }
@@ -195,3 +248,26 @@ body {
         font-size: 55%;
     }
 }
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  
